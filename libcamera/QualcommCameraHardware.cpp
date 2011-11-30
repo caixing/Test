@@ -2116,6 +2116,8 @@ void QualcommCameraHardware::setZoom()
                 LOGV("Reducing picture quality; new multiplier: %d", multiplier);
             }
             level = zoomsel * (iscamcorder ? (multiplier*5)/11 : 5);
+            //Update the parameters so initRaw doesn't use the wrong size later
+            mParameters.getPictureSize(&mRawWidth, &mRawHeight);
         }
     } else {
         zoomSupported = false;
