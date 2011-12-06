@@ -334,7 +334,7 @@
     <!-- The default reduced-datarate notification mask -->
     <!-- 2 means give warning -->
     <integer name="config_datause_notification_type">2</integer>
-    <bool name="config_animateScreenLights">false</bool>
+    <bool name="config_animateScreenLights">true</bool>
     <bool name="config_rilNeedsNullPath">true</bool>
     <!-- Disable the screen-on/off animations -->
     <bool name="config_enableScreenOnAnimation">false</bool>
